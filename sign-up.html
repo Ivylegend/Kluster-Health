@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kluster Health Sign up</title>
+  </head>
+  <body>
+    <main>
+      <!-- FORM 1 -->
+      <section id="Form1" class="flex-row sign-up">
+        <div class="cover-img">
+          <img src="images/Frame 1.png" alt="woman" />
+        </div>
+        <div class="sign-up-form">
+          <img
+            class="arrow-left"
+            src="images/arrow-left.png"
+            alt="left-arrow"
+          />
+          <h2>Create your Klusterhealth account</h2>
+          <span class="flex-row already">
+            <p>Already have an account?</p>
+            <a href="login.html" class="login underlined">Log In</a>
+          </span>
+          <form action="">
+            <div class="input-div">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" />
+            </div>
+            <div class="input-div">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="John Doe" />
+            </div>
+            <div class="input-div">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="John Doe" />
+            </div>
+            <div class="input-div">
+              <label for="password-repeat">Repeat Password</label>
+              <input
+                type="password"
+                id="password-repeat"
+                placeholder="Repeat password"
+              />
+            </div>
+            <button id="next1" class="next-btn btn" type="button">Next</button>
+          </form>
+          <p class="or">OR</p>
+          <div class="login-btn">
+            <button class="btn">
+              <img src="images/Google svg.svg" alt="" />
+            </button>
+            <button class="btn">
+              <img src="images/Group.svg" alt="" />
+            </button>
+          </div>
+          <p class="policy">
+            By registering, you accept our
+            <i class="underlined">Terms of use</i> and
+            <i class="underlined">Privacy Policy</i>
+          </p>
+        </div>
+      </section>
+      <!-- FORM 2 -->
+      <section id="Form2" class="flex-row sign-up">
+        <div class="cover-img">
+          <img src="images/Frame 2.png" alt="woman" />
+        </div>
+        <div class="flex-col">
+          <div>
+            <h2>Let's get to know you better</h2>
+            <p>How do you identify?</p>
+            <form action="" class="step-form">
+              <small>How do you identify?</small>
+              <select name="Identity" id="identity">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+                <option value="prefer-not-to-say">Prefer not tosay</option>
+              </select>
+            </form>
+          </div>
+          <button class="next-btn btn" id="next2" type="button">Next</button>
+        </div>
+      </section>
+      <!-- FORM 3 -->
+      <section id="Form3" class="flex-row sign-up">
+        <div class="cover-img">
+          <img src="images/Frame 1.png" alt="woman" />
+        </div>
+        <div class="flex-col">
+          <div>
+            <h2>What is your date of birth?</h2>
+            <p>When were you born?</p>
+            <form action="" class="step-form">
+              <small>Your date of birth?</small>
+              <input type="date" />
+            </form>
+          </div>
+          <button class="next-btn btn" id="next3" type="button">Next</button>
+        </div>
+      </section>
+      <!-- FORM 4 -->
+      <section id="Form4" class="flex-row sign-up">
+        <div class="cover-img">
+          <img src="images/Frame 3.png" alt="woman" />
+        </div>
+        <div class="flex-col">
+          <div>
+            <h2>What do you hope to achieve with Kluster Health?</h2>
+            <p>Select the option that suits you</p>
+            <form action="" class="step-form">
+              <div class="border">
+                <input type="checkbox" name="reminders" id="reminder" />
+                <label for="reminders">Get reminders for my medication</label>
+              </div>
+              <div class="border">
+                <input type="checkbox" name="reminders" id="reminder" />
+                <label for="reminders">Track my medication intake</label>
+              </div>
+            </form>
+          </div>
+          <button class="next-btn btn" id="next4" type="button">Next</button>
+        </div>
+      </section>
+      <!-- FORM 5 -->
+      <section id="Form5" class="flex-row sign-up">
+        <div class="cover-img">
+          <img src="images/Frame 3.png" alt="woman" />
+        </div>
+        <div class="flex-col">
+          <div>
+            <h2>Almost there! How do you want to be reminded?</h2>
+            <p>You can select more than one option?</p>
+            <form action="" class="step-form">
+              <div class="border">
+                <input type="checkbox" name="reminders" id="reminder" />
+                <label for="reminders">Email</label>
+              </div>
+              <div class="border">
+                <input type="checkbox" name="reminders" id="reminder" />
+                <label for="reminders">Push Notifications</label>
+              </div>
+              <div class="border">
+                <input type="checkbox" name="reminders" id="reminder" />
+                <label for="reminders">Phone Number</label>
+              </div>
+            </form>
+          </div>
+          <button class="next-btn btn" id="next5" type="button">
+            Finish Up
+          </button>
+        </div>
+      </section>
+
+      <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small></small></div>
+        <div class="step-col"><small></small></div>
+        <div class="step-col"><small></small></div>
+        <div class="step-col"><small></small></div>
+        <div class="step-col"><small></small></div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal">
+          <img
+            src="images/close-circle.png"
+            alt="close-button"
+            class="btn close"
+          />
+          <span class="check-mark">
+            <img src="images/check.svg" alt="good-checkmark" />
+          </span>
+          <p class="welcome">Welcome, <span class="name">Micheal!</span></p>
+          <p class="complete-profile">
+            You've now completed your profile. Now lets's add your medications
+            to create your very first reminder.
+          </p>
+          <button class="add-meds btn">Add my medication</button>
+          <button class="dashboard btn">
+            <a href="dashboard.html">Proceed to my Dashboard</a>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      var form1 = document.getElementById("Form1");
+      var form2 = document.getElementById("Form2");
+      var form3 = document.getElementById("Form3");
+      var form4 = document.getElementById("Form4");
+      var form5 = document.getElementById("Form5");
+
+      var Next1 = document.getElementById("next1");
+      var Next2 = document.getElementById("next2");
+      var Next3 = document.getElementById("next3");
+      var Next4 = document.getElementById("next4");
+      var Finish = document.getElementById("next5");
+
+      var Progress = document.getElementById("progress");
+      var Close = document.querySelector(".close");
+      var modal = document.querySelector(".modal-body");
+
+      Close.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      Next1.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "0px";
+        Progress.style.width = "200px";
+      });
+      Next2.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "0px";
+        Progress.style.width = "300px";
+      });
+      Next3.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "-100vw";
+        form4.style.left = "0px";
+        Progress.style.width = "400px";
+      });
+      Next4.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "-100vw";
+        form4.style.left = "-100vw";
+        form5.style.left = "0px";
+        Progress.style.width = "500px";
+      });
+      Finish.addEventListener("click", () => {
+        modal.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
