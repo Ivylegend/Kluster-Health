@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <title>My Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <nav class="side-nav">
+        <div class="nav-top">
+          <div class="logo-cover">
+            <p class="logo mobile">KlusterHealth</p>
+            <img
+              src="images/close-circle.png"
+              alt="close-circle"
+              class="close-circle"
+            />
+          </div>
+          <ul>
+            <li class="active">
+              <a href=""><img src="images/home-2.png" alt="" /> Home</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/medication icon.png" alt="" /> My
+                Medications</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img class="adherence" src="images/monitor.png" alt="" /> My
+                Adherence</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/medication icon.png" alt="" /> Medical
+                Professional</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav-bottom">
+          <span class="initials">IM</span>
+          <div>
+            <p class="name">Iyang Micheal</p>
+            <p class="email">michealiyang@gmail.com</p>
+          </div>
+          <div class="logout">
+            <img src="images/logout.png" alt="log-out" />
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-body">
+        <div class="mobile-nav">
+          <p class="logo">KlusterHealth</p>
+          <img src="images/menu.png" alt="menu" class="menu" />
+        </div>
+        <div class="one">
+          <p>Good Afternoon, <span class="username">Micheal</span></p>
+          <div class="notifs">
+            <span class="notification-img">
+              <img src="images/notification.png" alt="bell" />
+            </span>
+            <span class="initials">IM</span>
+          </div>
+        </div>
+
+        <!-- TWO -->
+        <div class="two">
+          <div class="days"></div>
+          <div class="date"></div>
+        </div>
+
+        <!-- THREE -->
+        <div class="three">
+          <!-- NO ACTIVITY YET -->
+          <div class="inactive">
+            <div class="calendar-img">
+              <img src="images/calendar-add.png" alt="calendar" />
+            </div>
+            <span>
+              <p>You currently have no medication reminders set</p>
+              <p>
+                When you do, all medication reminders would appear in this table
+              </p>
+            </span>
+            <button class="reminder-btn btn">Add a Medication Reminder</button>
+          </div>
+
+          <!-- WHEN IT HAS BEEN POPULATED -->
+          <div class="populated">
+            <div class="med-date">
+              <img src="images/medication icon.png" alt="pill" />
+              <span class="today-med"
+                >My Medications for Today -
+                <p class="dayofmed">Wednesday, 5th</p></span
+              >
+            </div>
+
+            <!-- SCHEDULES -->
+            <div class="schedules">
+              <div class="left-schedule">
+                <div class="medtime">
+                  <span class="time">8 : 00 AM</span>
+                  |
+                  <span class="drug">Panadol</span>
+                </div>
+                <div>Take 1 pill(s) after eating</div>
+                <div class="status">PENDING</div>
+              </div>
+              <div class="right-schedule">
+                <img
+                  src="images/arrow-left.png"
+                  alt="right"
+                  class="arrow-right"
+                />
+              </div>
+            </div>
+            <div class="schedules">
+              <div class="left-schedule">
+                <div class="medtime">
+                  <span class="time">8 : 00 AM</span>
+                  |
+                  <span class="drug">Panadol</span>
+                </div>
+                <div>Take 1 pill(s) after eating</div>
+                <div class="status">PENDING</div>
+              </div>
+              <div class="right-schedule">
+                <img
+                  src="images/arrow-left.png"
+                  alt="right"
+                  class="arrow-right"
+                />
+              </div>
+            </div>
+            <div class="schedules">
+              <div class="left-schedule">
+                <div class="medtime">
+                  <span class="time">8 : 00 AM</span>
+                  |
+                  <span class="drug">Panadol</span>
+                </div>
+                <div>Take 1 pill(s) after eating</div>
+                <div class="status">PENDING</div>
+              </div>
+              <div class="right-schedule">
+                <img
+                  src="images/arrow-left.png"
+                  alt="right"
+                  class="arrow-right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      <div class="modal">
+        <div class="modal-box">
+          <img src="images/arrow-left.png" alt="return button" class="btn return" />
+          <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small></small></div>
+            <div class="step-col"><small></small></div>
+            <div class="step-col"><small></small></div>
+            <div class="step-col"><small></small></div>
+            <div class="step-col"><small></small></div>
+            <div class="step-col"><small></small></div>
+            <div class="step-col"><small></small></div>
+          </div>
+          <div class="forms">
+            <!-- FORM 1 -->
+            <div class="Form1 all-forms" id="Form1">
+              <p class="form-title">What form is the med?</p>
+              <small>When were you born?</small>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Pills</p>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Injection</p>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Solution</p>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Inhaler</p>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Powder</p>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Others</p>
+              </div>
+              <button id="next1" class="next-btn btn" type="button">
+                Next
+              </button>
+            </div>
+
+            <!-- FORM 2 -->
+            <div class="Form2 all-forms" id="Form2">
+              <p class="form-title">What are you taking it for?</p>
+              <small>When were you born?</small>
+              <div class="conds">
+                <label for="condition"
+                  >What medical condition are you suffering from?</label
+                >
+                <input type="text" placeholder="medical condition" />
+              </div>
+              <button id="next2" class="next-btn btn" type="button">
+                Next
+              </button>
+            </div>
+
+            <!-- FORM 3 -->
+            <div class="Form3 all-forms" id="Form3">
+              <p class="form-title">How often do you take it?</p>
+              <small>When were you born?</small>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Everyday</p>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Every other day</p>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Specific days of the week</p>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="" id="" />
+                <p>Every "x"</p>
+              </div>
+              <button id="next3" class="next-btn btn" type="button">
+                Next
+              </button>
+            </div>
+
+            <!-- FORM 4 -->
+            <div class="Form4 all-forms" id="Form4">
+              <p class="form-title">What is the name of the pill?</p>
+              <small>When were you born?</small>
+              <div class="conds">
+                <label for="condition">What is the name of your regimen?</label>
+                <input type="text" placeholder="name of pill" />
+              </div>
+              <button id="next4" class="next-btn btn" type="button">
+                Next
+              </button>
+            </div>
+
+            <!-- FORM 5 -->
+            <div class="Form5 all-forms" id="Form5">
+              <p class="form-title">When do you need to take the first dose?</p>
+              <small>Time and number of pills to be taken</small>
+              <div class="conds">
+                <small for="condition">Choose a Time</small>
+                <input type="time" placeholder="AM" />
+              </div>
+              <div class="conds">
+                <small for="condition">Number of pill(s) (Default dose)</small>
+                <input type="number" placeholder="1" />
+              </div>
+              <button id="next5" class="next-btn btn" type="button">
+                Next
+              </button>
+            </div>
+
+            <!-- FORM 6 -->
+            <div class="Form6 all-forms" id="Form6">
+              <p class="form-title">How often do you to take your regimen?</p>
+              <small>Interval between each dose</small>
+              <div class="conds">
+                <small for="condition">Interval between each dosage</small>
+                <select name="interval" id="interval">
+                  <option value="">Choose Interval</option>
+                  <option value="">Once a day</option>
+                  <option value="">Twice a day</option>
+                  <option value="">3 times a day</option>
+                  <option value="">4 times daily(6 hourly)</option>
+                </select>
+              </div>
+              <button id="next6" class="next-btn btn" type="button">
+                Next
+              </button>
+            </div>
+
+            <!-- FORM 7 -->
+            <div class="Form7 all-forms" id="Form7">
+              <p class="form-title">Panadol (Its dynamic)</p>
+              <small>Almost done. Would you like to :</small>
+              <div class="conds">
+                <a href=""
+                  ><button class="buttons btn">
+                    Set Treatment duration
+                  </button></a
+                >
+                <a href=""
+                  ><button class="buttons btn">Add Instructions</button></a
+                >
+                <a href=""
+                  ><button class="buttons btn">Add Refill reminders</button></a
+                >
+              </div>
+              <button id="next7" class="next-btn btn" type="button">
+                Save
+              </button>
+            </div>
+
+            <!-- SUCCESS FORM -->
+            <div class="Form8 all-forms" id="Form8">
+              <div class="success-img">
+                <img src="images/Frame 23.png" alt="" />
+              </div>
+              <p class="form-title">
+                You have successfully added <i>Panadol</i>
+              </p>
+              <div>
+                <!-- <button class="next-btn btn">Add Another Medication</button> -->
+                <button class="another-btn btn" type="button">
+                  Add Another Medication
+                </button>
+                <button id="next8" class="outline btn" type="button">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const mobileNav = document.querySelector(".side-nav");
+      const close = document.querySelector(".close-circle");
+
+      var form1 = document.getElementById("Form1");
+      var form2 = document.getElementById("Form2");
+      var form3 = document.getElementById("Form3");
+      var form4 = document.getElementById("Form4");
+      var form5 = document.getElementById("Form5");
+      var form6 = document.getElementById("Form6");
+      var form7 = document.getElementById("Form7");
+      var form8 = document.getElementById("Form8");
+
+      var Next1 = document.getElementById("next1");
+      var Next2 = document.getElementById("next2");
+      var Next3 = document.getElementById("next3");
+      var Next4 = document.getElementById("next4");
+      var Next5 = document.getElementById("next5");
+      var Next6 = document.getElementById("next6");
+      var Next7 = document.getElementById("next7");
+      var Next8 = document.getElementById("next8");
+
+      var Progress = document.getElementById("progress");
+      var modal = document.querySelector(".modal");
+      const reminderBtn = document.querySelector(".reminder-btn");
+      const inactive = document.querySelector(".inactive");
+      const populated = document.querySelector(".populated");
+
+      //   MOBILE NAV CONTROLS
+      menu.onclick = function () {
+        mobileNav.style.display = "flex";
+      };
+      close.onclick = function () {
+        mobileNav.style.display = "none";
+      };
+
+      //   TO OPEN THE MODAL
+      reminderBtn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      //   MULTI STEP FORM
+      Next1.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "0px";
+        Progress.style.width = "150px";
+      });
+      Next2.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "0px";
+        Progress.style.width = "225px";
+      });
+      Next3.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "-100vw";
+        form4.style.left = "0px";
+        Progress.style.width = "300px";
+      });
+      Next4.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "-100vw";
+        form4.style.left = "-100vw";
+        form5.style.left = "0px";
+        Progress.style.width = "375px";
+      });
+      Next5.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "-100vw";
+        form4.style.left = "-100vw";
+        form5.style.left = "-100vw";
+        form6.style.left = "0px";
+        Progress.style.width = "450px";
+      });
+      Next6.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "-100vw";
+        form4.style.left = "-100vw";
+        form5.style.left = "-100vw";
+        form6.style.left = "-100vw";
+        form7.style.left = "0px";
+        Progress.style.width = "530px";
+      });
+      Next7.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "-100vw";
+        form4.style.left = "-100vw";
+        form5.style.left = "-100vw";
+        form6.style.left = "-100vw";
+        form7.style.left = "-100vw";
+        form8.style.left = "0px";
+      });
+      Next8.addEventListener("click", () => {
+        form1.style.left = "-100vw";
+        form2.style.left = "-100vw";
+        form3.style.left = "-100vw";
+        form4.style.left = "-100vw";
+        form5.style.left = "-100vw";
+        form6.style.left = "-100vw";
+        form7.style.left = "-100vw";
+        form8.style.left = "0px";
+        modal.style.display = "none";
+        inactive.style.display = "none";
+        populated.style.display = "flex";
+      });
+    </script>
+  </body>
+</html>
